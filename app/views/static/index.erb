@@ -1,2 +1,10 @@
 <h1>Hello World</h1>
 <p>See Me in views/static/index.html.erb</p>
+
+<form action="/urls" method="post">
+	Please Enter URL:
+	<input type = "text" name = "long_url">
+	<input type = "submit" value = "Click Here to Shorten Your URL!">
+</form>
+
+<p>Here's your Shortened URL!: <a href="/<%= @short_url%>"><%= @short_url %></a></p>
