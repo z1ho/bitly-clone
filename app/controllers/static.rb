@@ -4,7 +4,7 @@ end
 
 post '/urls' do
 	long_url = params[:long_url]
-	@link = Url.create(long_url: long_url)
+	@link = Url.create(long_url: long_url, click_count: 0)
 	# my_url = Url.new(long_url: long_url)	#assigning a new instance
 	# @short_url = my_url.shorten						#use the shorten method (ie .shorten) assign the shortened url to a variable
 	# my_url.save														#save it
@@ -15,23 +15,13 @@ get '/:short_url' do
 	erb :"static/result"										#sends you to static/result.erb
 	u = Url.find_by short_url: params[:short_url]
 	link = u.long_url 									
+	@u.click_count = u.click_count + 1
+	u.save
 	redirect link
 end
 
+get '/count' do
+	@url = Url.all
+	erb :"static/counts"
+end
 
-
-##PING'S NOTES
-#from site url to CONTROLLER
-# e.g. bitly.com/mini
-
-# under controller it will read it as 
-	#=> #get '/mini' do 
-	#end
-#what html page to return to viewer? thats where VIEW comes in
-
-# Views
-# mini.html.erb
-# whenever someone accesses this page, you want to return the mini.html.erb file to them
-	#get '/mini' do 
-		#=> #erb 'mini'				erb i.e. embedded ruby
-	#end 
