@@ -11,17 +11,19 @@ post '/urls' do
 	erb :"static/index"
 end
 
-get '/:short_url' do
-	erb :"static/result"										#sends you to static/result.erb
-	u = Url.find_by short_url: params[:short_url]
-	link = u.long_url 									
-	@u.click_count = u.click_count + 1
-	u.save
-	redirect link
-end
-
 get '/count' do
 	@url = Url.all
 	erb :"static/counts"
 end
+
+get '/:short_url' do
+	erb :"static/result"										#sends you to static/result.erb
+	u = Url.find_by short_url: params[:short_url]
+	link = u.long_url 									
+	u.click_count = u.click_count + 1
+	u.save
+	redirect link
+end
+
+
 
