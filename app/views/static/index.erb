@@ -1,12 +1,21 @@
-<h1>Hello World!</h1>
-<p>See Me in views/static/index.html.erb</p>
-<form action="/urls" method="post">
-	Please Enter URL:
-	<input type = "text" name = "long_url">
-	<input type = "submit" value = "Click Here to Shorten Your URL!">
-</form>
+<p style="text-align: center">
+
+<!-- 	<br><br><br><br> -->
+<div>
+	<form action="/urls" method="post">
+	<input type = "text" name = "long_url" placeholder = "Paste Your URL Here!" id = "paste">
+	<br><br>
+	<input type = "submit" class='btn' value = "Click To Submit" size = "80" id = "submit">
+	</form>
+</div>
+
 <% unless @link == nil %>
-<p>Here's your Shortened URL!: <a href="/<%= @link.short_url%>"><%= @link.short_url %></a></p>
+<p style="font-family: Futura;">Your Shortened URL: <a href="/<%= @link.short_url%>" id = "newlink"><%= @link.short_url %></a></p>
 <% end %>
 
-<a href="/count">Show Link Counts:</a>
+<div>
+	<a href="/counts"id="linkcount">Click for Link Counts</a>
+</div>
+<!-- size="80" height="50" width="50"  -->
+<!--  style="font-size: 12px; font-family: Futura; color: midnightblue" -->
+<!-- class='btn btn-default btn-success btn-lg' -->

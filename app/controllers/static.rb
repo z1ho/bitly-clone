@@ -16,6 +16,32 @@ get '/count' do
 	erb :"static/counts"
 end
 
+get '/index' do
+	@url = Url.all
+	erb :"static/index"
+end
+
+
+get '/about' do
+	@url = Url.all
+	erb :"static/about"
+end
+
+get '/contact' do
+	@url = Url.all
+	erb :"static/contact"
+end
+
+get '/careers' do
+	@url = Url.all
+	erb :"static/careers"
+end
+
+get '/counts' do
+	@url = Url.all
+	erb :"static/counts"
+end
+
 get '/:short_url' do
 	erb :"static/result"										#sends you to static/result.erb
 	u = Url.find_by short_url: params[:short_url]
@@ -24,6 +50,7 @@ get '/:short_url' do
 	u.save
 	redirect link
 end
+
 
 
 

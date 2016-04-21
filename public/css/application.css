@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/* FONTS */
+
+@font-face {
+    font-family: mignone;
+    src: url(/font/Mignone.ttf);
+}
+
+@font-face {
+    font-family: dvhb;
+    src: url(/font/DolceVitaHeavyBold.ttf);
+}
+
+@font-face {
+    font-family: lemonmilk;
+    src: url(/font/LemonMilk.otf);
+}
+
+
+/* CSS */
+
+html {
+	text-align: center;
+}
+
+h1 {
+	font-family: Futura;
+	width:200px; 
+	height:50px; 
+	font-size: 70px;
+	border:10px dotted white; 
+	text-align: center;
+	-moz-border-radius: 15px;
+ 	border-radius: 60px;
+    border: dotted 5px white;
+    vertical-align: middle;
+    line-height: 50px;
+    padding:40px;
+}
+
+body {
+	color: white;
+	background-image: url(/img/backgroundimg.jpg); /*You will specify your image path here.*/
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;						   /* Makes the image fit-to-screen*/
+	background-position: top center !important; 
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+}
+
+h4 {
+	font-family: Futura;
+	font-size: 20px;
+/*	padding-top: 40px;*/
+}
+
+input {
+	background-color: none;
+	border: dotted white;
+	border-color: none;
+    padding:5px;
+}
+
+#strikethrough {
+    vertical-align:-25px;
+}
+
+#tableinfo {
+	font-family: Futura;
+	font-size: 20px;
+	color: #f2f2f2;
+}
+
+/*aligns the buttons onto one row*/
+div#buttons > form {
+	display: inline-block;
+}
+
+#buttons {
+	font-size: 50px;
+	font-family: Futura;
+}
+
+	#home {
+		background-color: transparent;
+		color: white;
+		-moz-border-radius: 15px;	
+	 	border-radius: 15px;
+	}
+
+	#about {
+		background-color: transparent;
+		color: white;
+		-moz-border-radius: 15px;	
+	 	border-radius: 15px;
+	}
+
+	#contact {
+		background-color: transparent;
+		color: white;
+		-moz-border-radius: 15px;	
+	 	border-radius: 15px;
+	}
+
+	#careers {
+		background-color: transparent;
+		color: white;
+		-moz-border-radius: 15px;	
+	 	border-radius: 15px;
+}
+
+#better{
+	font-family: Futura;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+#paste {
+    /*background-color: transparent; */
+    -moz-border-radius: 15px;	
+ 	border-radius: 15px;
+    border:dotted 1px white;
+    text-align: center;
+    width: 500px;  
+    height: 35px;
+}
+
+#submit {
+	-moz-border-radius: 15px;	
+ 	border-radius: 15px;
+}
+
+#newlink {
+	font-family: Futura; 
+	padding-top: 30px;	
+
+}
+
+#newlink:hover { 
+    color: yellow;
+}
+
+#linkcount {
+	padding-top: 30px;
+	font-size: 12px; 
+	font-family: Futura; 
+	color: midnightblue;
+}
+
+footer {
+	font-family: Futura;
+	padding-top: 120px
+}
+
+#abouttitle {
+	font-family: Futura;
+	width:150px; 
+	height:50px; 
+	font-size: 70px;
+	border:10px dotted white; 
+	-moz-border-radius: 15px;
+ 	border-radius: 60px;
+    border: dotted 5px white;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+#aboutcontent {
+	font-family: Futura;
+}
