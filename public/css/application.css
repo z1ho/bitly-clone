@@ -109,7 +109,18 @@ div#buttons > form {
 		color: white;
 		-moz-border-radius: 15px;	
 	 	border-radius: 15px;
-}
+	}
+
+	#errorbtn {
+		background-color: transparent;
+		color: white;
+    	width: 80px;
+    	height: 40px;
+    	font-size: 20px;
+		-moz-border-radius: 15px;
+ 		border-radius: 60px;
+    	vertical-align: middle; 	
+    }
 
 #better{
 	font-family: Futura;
@@ -143,7 +154,7 @@ div#buttons > form {
 }
 
 #linkcount {
-	padding-top: 30px;
+	padding-top: 10px;
 	font-size: 12px; 
 	font-family: Futura; 
 	color: midnightblue;

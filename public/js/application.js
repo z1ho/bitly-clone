@@ -89,6 +89,30 @@ $(document).ready(function(){
     });    
 });
 
+// #ERRORBTN
+$(document).ready(function(){
+    $("#errorbtn").mouseenter(function(){
+        $(this).css({
+            "background-color": "#bfbfbf",
+            "color": "white",
+            "border": "dotted 3px white"
+        });
+    });
+    $("#errorbtn").mouseleave(function(){
+        $(this).css({
+            "background-color": "transparent",
+            "color": "white",
+            "border": "dotted 3px white"
+        });
+    });    
+});
+
+
+$(document).ready(function()(argument) {
+    // body...
+})
+console.log
+
 // #NEWLINK
 $(document).ready(function(){
     $("#newlink").mouseenter(function(){
