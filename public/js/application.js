@@ -107,12 +107,6 @@ $(document).ready(function(){
     });    
 });
 
-
-$(document).ready(function()(argument) {
-    // body...
-})
-console.log
-
 // #NEWLINK
 $(document).ready(function(){
     $("#newlink").mouseenter(function(){
@@ -122,8 +116,3 @@ $(document).ready(function(){
         $(this).css("colour", "black");
     });    
 });
-
-
-// $("p").mouseenter(function(){
-//     $("p").css("background-color", "yellow");
-// });

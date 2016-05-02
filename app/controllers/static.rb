@@ -47,8 +47,7 @@ get '/error' do
 	erb :"static/error"
 end
 
-get '/:short_url' do
-										
+get '/:short_url' do						
 	u = Url.find_by short_url: params[:short_url]
 	link = u.long_url 									
 	u.click_count = u.click_count + 1
